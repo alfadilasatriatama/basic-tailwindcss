@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // -------coztumize in tailwindcss--------
+        tailwind.config = {
+            darkMode: 'class', 
+          theme: {
+            extend: {
+                // -----ex:-----
+              spacing: {
+                '13': '3.25rem',
+              },
+            // ----- input fonts to tailwindcss----------
+              fontFamily: {
+                  inter: ['Inter'],
+              },
+            // ------- cotumize color--------
+                colors: {
+                    coffe: '#c0ffee',
+                },
+            // -----costumize animation-----
+                animation: {
+                    'spin-slow': 'spin 3s linear infinite',
+                    'wiggle': 'wiggle 1s ease-in-out infinite',
+                },
+                // -------wiggle animation------
+                keyframes: {
+                    wiggle: {
+                        '0%, 100%' : { transform: 'rotate(-3deg)'},
+                        '50%': { transform: 'rotate(3deg)'},
+                    }
+                }
+            },
+          },
+        };
+      </script>
+    <title>Learn basic TailwindCSS</title>
+    <!-- input tailwindcss with style -->
+    <style type="text/tailwindcss">
+            #toggle:checked ~label div.toggle-circle {
+                @apply translate-x-3; 
+            }
+    </style>
+</head>
+<body class="dark:bg-slate-800 dark:text-slate-200">
+<!-- ------------bg color gradient --------------->
+    <!-- input color in text -->
+    <h1 class="text-5xl font-bold text-center my-10">Learn <span class="bg-gradient-to-r from-blue-500 to-teal-500 bg-clip-text text-transparent">TailwindCss Basic</span></h1>
+<!-- sizing -->
+    <section class="mb-10 bg-indigo-100">
+        <h2 class="text-3xl text-center">Spacing</h2>
+        <div class="m-13 bg-gradient-to-br from-indigo-900">Margin</div>
+        <div class="py-8 bg-gradient-to-tl from-indigo-300 via-red-200">Padding</div>
+    </section>
+
+    <!-- max,width,height,dll -->
+    <section class="mb-10 bg-indigo-400">
+        <h2 class="text-3xl text-center">Sizing</h2>
+        <!-- from parent element -->
+        <div class="w-32 h-32 m-10 text-center bg-red-300">Box 1</div>
+        <!-- call color cotumize -->
+        <div class="max-w-xs text-center bg-coffe">Box 2</div>
+    </section>
+<!-- fontsize -->
+    <!-- --------call fonts cotumize & respons max width, margin x center -->
+    <section class="font-inter max-w-3xl mx-auto">
+        <h2 class="mb-4 text-4xl font-bold">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, molestias.</h2>
+        <div class="mb-2 text-lg text-gray-500">
+           Lorem, ipsum dolor. <a href="#" class="text-gray-700 font-semibold"> adipisicing elit.</a>Lorem, ipsum.
+        </div>
+        <p class="mb-4 ">Lorem ipsum <a href="#" class="underline font-semibold text-blue-600">Lorem, ipsum dolor.</a>dolor sit amet consectetur, adipisicing elit. Laudantium sequi eius ex harum sint autem odio nulla vel praesentium. Aliquam explicabo harum ipsum incidunt impedit numquam reprehenderit laboriosam deserunt soluta exercitationem inventore amet aperiam quisquam aut temporibus suscipit, ex maxime rerum cum excepturi iste quaerat corporis! Provident necessitatibus soluta quos.</p>
+        <blockquote class="mb-4  italic font-thin text-xl">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur corporis quo, minima quia iure iusto eius quasi animi ex dicta."</blockquote>
+        <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium rem modi dolorum perspiciatis architecto corporis amet voluptatibus illo harum eius eaque, saepe ipsam accusantium perferendis! Animi laudantium quidem eius repellendus.</p>
+    </section>
+    <!-- learn basic 2 -->
+    <h2 class="font-bold text-4xl">learn basic 2 (background)</h2>
+    <!-- [] for custom use 1 or 2  call image random-->
+    <div class="max-w-xl h-96 mx-auto mt-[42px] bg-[#bada55] overflow-y-scroll bg-fixed"  style="background-image: url('https://source.unsplash.com/1000x600?computer');">
+        <p class="p-5 text-2xl ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quam saepe reiciendis distinctio quos ducimus sit, ab illum totam sed esse ea velit vitae rem quo quis repellat laborum perspiciatis amet. Dicta est, labore soluta laboriosam maxime ex quaerat incidunt distinctio. Corporis, repudiandae commodi odio iste eligendi, rerum harum, corrupti eos ab incidunt obcaecati. Voluptatem sunt suscipit nisi, ducimus labore debitis. Rem sunt impedit ducimus provident ut recusandae obcaecati corrupti aliquam! Asperiores rem, tenetur necessitatibus eligendi voluptas libero odit. Non iure, impedit quo eius laboriosam enim eum reiciendis praesentium sit in fuga, perspiciatis vitae harum? Vel eveniet vitae incidunt assumenda autem maxime commodi est, at unde similique, laudantium nemo? Esse, eaque. Minima, culpa sint hic repellendus dolore temporibus, quae laudantium quo ut cupiditate distinctio, qui aliquam officia? Dolor rerum autem repellendus voluptatum illo eos eligendi voluptas, quam suscipit fugit pariatur error nihil, neque laudantium fugiat, eveniet amet. Perspiciatis dolore ab nobis veritatis earum? Excepturi dolores quibusdam officiis, libero sed doloremque provident incidunt cupiditate saepe? Ipsam fugiat aliquam consequuntur. Repellat eum praesentium consequatur sed rerum tenetur illum non maiores nemo quisquam repellendus fuga iste sit iure quibusdam animi, enim architecto cumque magnam optio. A iusto labore asperiores nostrum porro nesciunt delectus.</p>
+    </div>
+
+    <!-- call image in folder -->
+    <div class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-no-repeat bg-center rounded-2xl shadow-xl shadow-slate-500 overflow-hidden border-8 bg-blend-darken" style="background-image: url(./img/1.jpg);">
+        <!-- blend effect -->
+        <div class="w-full h-full bg-blue-300 mix-blend-darken"></div>
+
+    </div>
+
+    <hr class="my-20">
+
+    <!-- create togle darkmode -->
+    <div class="flex justify-center">
+        <span class="text-sm text-slate-500 mr-2">Light</span>
+        <input type="checkbox" id="toggle" class="hidden"/>
+        <label for="toggle">
+            <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center  p-1 cursor-pointer ">
+                <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+            </div>
+        </label>
+        <span class="text-sm text-slate-500 ml-2 ">Dark</span>
+    </div>
+
+
+    <!-- Core basic hover:,sudoclass-->
+    <button class="my-10 bg-sky-500 px-5 py-2 rounded-full text-white font-semibold font-inter block mx-auto hover:bg-sky-600 active:bg-sky-700 focus:ring focus:ring-sky-300 dark:bg-slate-300 dark:text-slate-800 dark:hover:text-slate-900 dark:hover:bg-slate-100">save</button>
+
+    <!-- group hover -->
+    <div class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow font-inter hover:bg-sky-500 group font-serif dark:hover:bg-slate-300">
+        <h5 class="font-bold text-slate-700 text-lg mb-3 group-hover:text-white dark:group-hover:text-slate-800">My card</h5>
+        <!-- selection -->
+        <p class="text-slate-600 group-hover:text-white selection:bg-lime-300 selection:text-slate-900 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3 dark:group-hover:text-slate-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sequi explicabo odio tempora vitae distinctio iste exercitationem accusamus reprehenderit a?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, accusantium?</p>
+    </div>
+
+    <!-- placeholder card -->
+    <div class="max-w-lg border-slate-200 rounded-xl mx-auto shadow-md font-inter p-5 hover:bg-sky-500 group ">
+        <form action="">
+            <label for="email">
+                <span class="block font-semibold mb-1 text-slate-700 group-hover:text-white selection:bg-lime-400 after:content-['*'] after:text-pink-500 after:ml-0.5 ">Email</span>            
+                <input type="email" id="email" placeholder="input email..." class="px-3 py-2 border shadow rounded w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500 invalid:text-red-700 invalid:focus:ring-red-700 invalid:focus:border-red-700 peer">
+                <p class="text-sm m-1 text-pink-700 invisible peer-invalid:visible">Email not valid</p>
+            </label>
+        </form>
+    </div>
+
+    <hr class="my-20">
+
+<!-- transform|transition|animation -->
+
+    <!-- not parent element (not receomended)-->
+    <div class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg  hover:rotate-180 hover:bg-pink-500 transition duration-700 origin-top-left"></div>
+
+    <!-- with parent element (recomended)-->
+    <div class="w-40 h-40 mx-auto mt-20 group">
+        <div class="w-full h-full bg-sky-500 rounded-lg shadow-lg group-hover:rotate-180 origin-top-left transition duration-700 ease-in-out delay-500"></div>
+    </div>
+
+    <!-- animation -->
+    <div class="w-40 h-40 bg-pink-500 mx-auto rounded-lg shadow-lg mt-20 animate-wiggle"></div>
+
+    <hr class="my-20">
+
+    <!-- layouting -->
+
+    <div class="continer px-8 mx-auto">
+        <div class="border rounded-lg  shadow-lg p-10 relative">
+            <div class="w-10 h-10 bg-sky-200 rounded-full flex fixed bottom-5 right-5 cursor-pointer "><a href="#" class="text-xl m-auto ">🔝</a></div>
+            <img src="img/1.jpg" alt="laptop" width="150" class="float-left mr-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, error perspiciatis nulla deleniti quia quidem animi accusantium beatae vel esse tempore voluptas repellat dolore nesciunt ratione, cumque non quis omnis magnam odit aliquid maxime quo aperiam! Temporibus, nam? Soluta sunt magni tempore provident similique laudantium. Quibusdam voluptate nisi excepturi nostrum?</p>
+        </div>
+    </div>
+
+    <div class=" container mx-auto border rounded-lg  shadow-lg p-10 mt-20 columns-3">
+        <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4">
+        <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4">
+        <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4">
+        <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4">
+        <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4">
+        <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4">
+    </div>
+
+    <!-- responsive design -->
+    <hr class="my-24 border-t-4"/>
+
+    <div class="container px-6 font-inter max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:flex lg:max-w-full lg:p-0">
+        <div class="lg:p-12 lg:flex-1">
+            <h3 class="text-4xl font-bold text-slate-800 sm:text-5xl md:text-6xl"><span class="text-sky-500">Chris</span>toper</h3>
+            <img src="img/rog.jpg" alt="rog" class="mt-4 rounded-xl shadow-x sm:mt-6 sm:h-64 sm:w-full sm:object-cover sm:object-center lg:hidden">
+            <h2 class="mt-6 text-2xl font-semibold text-slate-800 sm:mt-8 sm:text-4xl">Lets learn tailwindcss together</h2>
+            <p class="mt-2 text-slate-500 sm:mt-4 sm:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ut, sunt qui sint illum fugiat cupiditate velit neque sapiente ullam aut omnis veniam rem esse voluptas, inventore ratione dolore? Deserunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, laboriosam.</p>
+        
+            <div class="mt-4 sm:mt-6">
+                <a href="#" class="inline-block px-5 py-3 bg-red-600 text-white rounded-lg shadow-lg uppercase font-semibold tracking-wider text-sm sm:text-base">Subcribe chanel youtube</a>
+            </div>
+        </div>
+        <div  class="hidden lg:flex lg:w-1/2 ">
+            <img src="img/rog.jpg" alt="rog" class="object-cover object-center rounded-l-full"/>
+        </div>
+    </div>
+
+    <!-- flexbox card -->
+    <h2 class="mt-24 mb-10 text-center font-bold text-3xl text-slate-700">My Galery</h2>
+
+    <div class="container mx-auto px-6 font-inter sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly p-3">
+        <div class="rounded-xl shadow-lg overflow-hidden mb-10 bg-white sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+            <img src="https://source.unsplash.com/600x400" alt="image caption" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum.</p>
+            </div>
+        </div>
+        <div class="rounded-xl shadow-lg overflow-hidden mb-10 bg-white sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+            <img src="https://source.unsplash.com/600x400" alt="image caption" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum.</p>
+            </div>
+        </div>
+        <div class="rounded-xl shadow-lg overflow-hidden mb-10 bg-white sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+            <img src="https://source.unsplash.com/600x400" alt="image caption" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum.</p>
+            </div>
+        </div>
+        <div class="rounded-xl shadow-lg overflow-hidden mb-10 bg-white sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+            <img src="https://source.unsplash.com/600x400" alt="image caption" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum.</p>
+            </div>
+        </div>
+        <div class="rounded-xl shadow-lg overflow-hidden mb-10 bg-white sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+            <img src="https://source.unsplash.com/600x400" alt="image caption" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- css grid -->
+    <div class="mt-64 p-2 font-inter grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4">
+        <h2 class="h-15 text-xl font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex"><span class="self-center">Wellcome to tailwind</span></h2>
+        <div class="h-15 text-lg font-bold text-slate-600 md:col-start-2 md:row-start-2 md:flex"><span class="self-end">@christoper</span></div>
+
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="w-full h-full bg-[url('img/image-1.jfif')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>
+        </div>        
+        <div class="h-15 bg-blue-500 aspect-[4/3] md:col-start-3 rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="w-full h-full bg-[url('img/image-2.jfif')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>
+        </div>        
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="w-full h-full bg-[url('img/image-3.jfif')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>
+        </div>        
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="w-full h-full bg-[url('img/image-4.jfif')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>
+        </div>        
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="w-full h-full bg-[url('img/image-5.jfif')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>
+        </div>        
+        <div class="h-15 bg-blue-500 aspect-[4/3] md:col-start-2 rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="w-full h-full bg-[url('img/image-6.jfif')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>
+        </div>        
+        <div class="h-15 bg-blue-500 aspect-[4/3]  md:col-start-4 rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="w-full h-full bg-[url('img/image-7.jfif')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>
+        </div>        
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="w-full h-full bg-[url('img/image-8.jfif')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>
+        </div>        
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="w-full h-full bg-[url('img/image-9.jfif')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>
+        </div>        
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="w-full h-full bg-[url('img/image-10.jfif')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500"></div>
+        </div>      
+    </div>
+ 
+    
+    <div class="mb-96"></div>
+
+    <script>
+        // ----Create active toggle darkmode---------
+        const checkbox = document.querySelector('#toggle');
+        const html = document.querySelector('html');
+        
+        checkbox.addEventListener('click', function(){
+            checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+        });
+    </script>
+</body>
+</html> 
